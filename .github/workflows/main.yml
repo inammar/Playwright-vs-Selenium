@@ -1,4 +1,4 @@
-name: First workflow
+name: Java tests Playwright Date Entering
 
 on: push
 
@@ -8,4 +8,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Hello from GitHub Actions"
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Run tests
+        run: mvn test
