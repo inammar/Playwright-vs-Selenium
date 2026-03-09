@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import sections.DateSection;
 import utils.PlaywrightUtils;
+import org.testng.annotations.Optional;
 
 public class DateTests {
 
@@ -12,10 +13,10 @@ public class DateTests {
     Browser browser;
     Page page;
     DateSection dateSection;
-
+//TEST
     @BeforeMethod
     @Parameters("browser")
-    public void setUp(String browserName) {
+    public void setUp(@Optional("chromium") String browserName) {
 
         playwright = Playwright.create();
         browser = PlaywrightUtils.createBrowser(playwright, browserName);
