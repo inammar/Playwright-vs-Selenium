@@ -24,7 +24,11 @@ public class DateTests {
 
         page.navigate("https://testautomationpractice.blogspot.com/");
 
-        page.locator("#cookieChoiceDismiss").click();
+        Locator cookie = page.locator("#cookieChoiceDismiss");
+
+        if (cookie.isVisible()) {
+            cookie.click();
+        }
 
         dateSection = new DateSection(page);
     }
