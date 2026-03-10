@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b03703e2-ae0b-4ce1-b2be-0d3708b16fe8" name="Changes" comment="Moved files to new folder">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/src/test/java/listeners/TestListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/src/test/java/sections/DateSection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/src/test/java/tests/DateTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/src/test/java/utils/ExtentReportManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/src/test/java/utils/PlaywrightUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Playwright/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/PlaywrightUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/PlaywrightUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772009086102</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Moved files to new folder">
+      <option name="closed" value="true" />
+      <created>1773076783218</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773076783218</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
