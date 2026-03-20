@@ -45,4 +45,12 @@ jobs:
         with:
           name: test-results
           path: target/
+
+      - name: Publish Test Results
+       uses: dorny/test-reporter@v1
+       if: always()
+       with:
+       name: TestNG Results
+       path: target/surefire-reports/*.xml
+       reporter: java-junit
         
