@@ -29,6 +29,9 @@ jobs:
       - name: Run tests
         run: mvn test -Dplaywright.reporter=html
 
+      - name: Check files
+        run: ls -R
+
       - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
