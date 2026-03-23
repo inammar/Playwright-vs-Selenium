@@ -27,24 +27,24 @@ jobs:
         run: mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
 
       - name: Run tests
-        run: mvn test -Dplaywright.reporter=html
+        run: mvn test
 
-      - name: Check files
-        run: ls -R
+      - name: Generate Test Report
+        if: always()
+        run: mvn surefire-report:report
 
-      - name: Upload Playwright Report
+      - name: Upload Test Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
-          path: playwright-report
+          name: test-report
+          path: target/site
 
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: target/
-
+          path: target/surefire-reports
       
         
