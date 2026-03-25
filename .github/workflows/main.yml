@@ -29,22 +29,26 @@ jobs:
       - name: Run tests
         run: mvn test
 
-      - name: Generate Test Report
-        if: always()
-        run: mvn surefire-report:report
-
-      - name: Upload Test Report
+      # 👇 Allure rezults (raw)
+      - name: Upload Allure Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-report
-          path: target/site
+          name: allure-results
+          path: target/allure-results
 
-      - name: Upload test results
+      # 👇 HTML report
+      - name: Generate Allure Report
+        if: always()
+        uses: simple-elf/allure-report-action@v1
+        with:
+          allure_results: target/allure-results
+          allure_report: target/allure-report
+
+      # 👇 Upload report
+      - name: Upload Allure Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-results
-          path: target/surefire-reports
-      
-        
+          name: allure-report
+          path: target/allure-report
