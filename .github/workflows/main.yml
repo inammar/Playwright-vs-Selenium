@@ -40,12 +40,11 @@ jobs:
           wget https://github.com/allure-framework/allure2/releases/latest/download/allure-2.27.0.tgz
           tar -zxvf allure-2.27.0.tgz
           sudo mv allure-2.27.0 /opt/allure
-          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
 
       # 👇 GENERATE REPORT
       - name: Generate Allure Report
         if: always()
-        run: allure generate target/allure-results --clean -o target/allure-report
+        run: /opt/allure/bin/allure generate target/allure-results --clean -o target/allure-report
 
       # 👇 UPLOAD REPORT
       - name: Upload Allure Report
