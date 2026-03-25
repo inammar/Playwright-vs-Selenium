@@ -29,21 +29,18 @@ jobs:
       - name: Run tests
         run: mvn test
 
-      # 👇 Allure rezults (raw)
-      - name: Upload Allure Results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results
-          path: target/allure-results
+      # 👇 Install Allure CLI
+      - name: Install Allure
+        run: |
+          sudo apt-add-repository ppa:qameta/allure -y
+          sudo apt-get update
+          sudo apt-get install allure -y
 
-      # 👇 HTML report
+      # 👇 Generate Allure report
       - name: Generate Allure Report
         if: always()
-        uses: simple-elf/allure-report-action@v1
-        with:
-          allure_results: target/allure-results
-          allure_report: target/allure-report
+        run: |
+          allure generate target/allure-results --clean -o target/allure-report
 
       # 👇 Upload report
       - name: Upload Allure Report
