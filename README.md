@@ -10,11 +10,13 @@ Github workflows were added to try CI/CD on Github.
 
 Test Case ID - TC_001
 
-Title
-
-Verify that user can select a valid date in Date Picker 1
+Title: Verify that user can select a valid date in Date Picker 1
 
 Priority: Medium
 
 Type: UI / Functional / Automated (Playwright)
+
+Preconditions: User has access to the website
+
+Test Data: Date: 07/17/2026 
 
