@@ -5,3 +5,16 @@
 Intellij, Java and Playwright project for automation of Date Entering.
 
 Github workflows were added to try CI/CD on Github. 
+
+### Test Case: Date Picker 1 – Valid Date Selection
+
+Test Case ID - TC_001
+
+Title
+
+Verify that user can select a valid date in Date Picker 1
+
+Priority: Medium
+
+Type: UI / Functional / Automated (Playwright)
+
