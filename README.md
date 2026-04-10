@@ -25,5 +25,18 @@ Steps
 2.	Locate the “Date Picker 1” input field 
 3.	Click on the input field 
 4.	Wait for the calendar widget to be displayed
+5.	Navigate to July 2026 (if not already visible) 
+6.	Select day “17” from the calendar
+
+Expected Result
+
+•	Calendar widget is displayed after clicking the input field 
+
+•	User is able to navigate between months 
+
+•	Selected date is inserted into the input field 
+
+•	Date is displayed in correct format: mm/dd/yyyy (07/17/2026) 
+
 
 
