@@ -38,5 +38,9 @@ Expected Result
 
 •	Date is displayed in correct format: mm/dd/yyyy (07/17/2026) 
 
+Postconditions
+
+•	Selected date remains visible in the input field
+
 
 
